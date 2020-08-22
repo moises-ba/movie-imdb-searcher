@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group 'org.mba.challenge'
+version '1.0-SNAPSHOT'
+
+
+
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile group: 'com.google.inject', name: 'guice', version: '4.1.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    compile "com.fasterxml.jackson.core:jackson-core:2.11.2"
+    compile "com.fasterxml.jackson.core:jackson-annotations:2.11.2"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.11.2"
+
+    compile "org.apache.httpcomponents:httpclient:4.5.12"
+
+    compile "ch.qos.logback:logback-classic:1.2.3"
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '2.0.2-beta'
+
+
+}

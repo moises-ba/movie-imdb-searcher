@@ -1,0 +1,5 @@
+.gradle/
+.idea
+*.zip
+build/
+target/
